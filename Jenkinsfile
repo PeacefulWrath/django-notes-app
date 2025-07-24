@@ -24,7 +24,7 @@ pipeline {
                 // sh "docker build . -t notes-app"
             }
         }
-        stage("Push to Docker Hub User devopsexpertsrinja"){
+        stage("Push to Docker Hub"){
             steps{
                 // withCredentials([usernamePassword(credentialsId:"dockerHubCred",passwordVariable:"dockerHubPass",usernameVariable:"dockerHubUser")]){
                 // sh "docker tag notes-app ${env.dockerHubUser}/notes-app:latest"
